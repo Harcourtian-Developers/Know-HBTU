@@ -11,12 +11,12 @@ import sc from "../images/subc.svg";
 
 const useStyles = makeStyles((theme) => ({
   card: {
-    width: "22vw",
-    height: "52vh",
-    backgroundColor: "#1F2937",
+    width: "24vw",
+    height: "50vh",
+    backgroundColor: "#FEF9C3",
     [theme.breakpoints.down("md")]: {
       width: "100vw",
-      height: "30vh",
+      height: "40vh",
     },
   },
 }));
@@ -34,19 +34,7 @@ const ScCard = () => {
             alignItems: "center",
           }}
         >
-          <div
-            style={{
-              borderRadius: "50%",
-              border: "1px solid black",
-              backgroundColor: "#3B82F6",
-              marginTop: "10px",
-              height: "64px",
-              width: "64px",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
+          <div className="inline-block p-3 text-blue-500 bg-blue-100 rounded-full dark:text-white dark:bg-blue-500">
             <img src={sc} style={{ height: "50px" }} />
           </div>
           <Box>
@@ -54,14 +42,13 @@ const ScCard = () => {
               variant="h5"
               style={{
                 fontWeight: "bold",
-                color: "white",
                 marginTop: "20px",
-                marginLeft: "70px",
+                textAlign: "center",
               }}
             >
               Sub-Councils
             </Typography>
-            <Typography style={{ color: "white", marginTop: "10px" }}>
+            <Typography style={{ marginTop: "10px" }}>
               HBTU aims to promote studies, research & innovation in Engineering
               areas of higher education, to enhance skill development through
               continuing education programme and knowledge and to achieve
@@ -70,11 +57,11 @@ const ScCard = () => {
           </Box>
         </CardContent>
         <Button
-          variant="contained"
           style={{
             width: "100%",
             color: "#3B82F6",
-            backgroundColor: "#1F2937",
+            backgroundColor: "#FEF9C3",
+            textTransform: "capitalize",
           }}
         >
           Read More

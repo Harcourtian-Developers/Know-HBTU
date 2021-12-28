@@ -1,10 +1,12 @@
 import React from "react";
 import home from "../images/home.jpg";
-import { makeStyles } from "@material-ui/core";
+import { Box, makeStyles } from "@material-ui/core";
 import AlumniCard from "./AlumniCard";
 import ScCard from "./ScCard";
 import TcCard from "./TcCard";
 import EcCard from "./EcCard";
+import Explore from "./Explore";
+import ExtraCards from "./ExtraCards";
 
 const useStyles = makeStyles((theme) => ({
   img: {
@@ -19,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "space-around",
     alignItems: "center",
-    marginTop: "30px",
+    marginTop: "10px",
     marginBottom: "30px",
     [theme.breakpoints.down("md")]: {
       display: "flex",
@@ -35,12 +37,14 @@ const Home = () => {
   return (
     <>
       <img src={home} className={classes.img} />
-      <div className={classes.cards}>
+      <ExtraCards />
+      <Explore />
+      <Box className={classes.cards}>
         <AlumniCard />
         <ScCard />
         <TcCard />
         <EcCard />
-      </div>
+      </Box>
     </>
   );
 };

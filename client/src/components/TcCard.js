@@ -11,12 +11,12 @@ import tc from "../images/tc.svg";
 
 const useStyles = makeStyles((theme) => ({
   card: {
-    width: "22vw",
-    height: "52vh",
-    backgroundColor: "#1F2937",
+    width: "24vw",
+    height: "50vh",
+    backgroundColor: "#BFDBFE",
     [theme.breakpoints.down("md")]: {
       width: "100vw",
-      height: "30vh",
+      height: "40vh",
     },
   },
 }));
@@ -34,19 +34,7 @@ const TcCard = () => {
             alignItems: "center",
           }}
         >
-          <div
-            style={{
-              borderRadius: "50%",
-              border: "1px solid black",
-              backgroundColor: "#3B82F6",
-              marginTop: "10px",
-              height: "64px",
-              width: "64px",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
+          <div className="inline-block p-3 text-blue-500 bg-blue-100 rounded-full dark:text-white dark:bg-blue-500">
             <img src={tc} style={{ height: "50px" }} />
           </div>
           <Box>
@@ -54,14 +42,14 @@ const TcCard = () => {
               variant="h5"
               style={{
                 fontWeight: "bold",
-                color: "white",
+
                 marginTop: "20px",
-                marginLeft: "70px",
+                textAlign: "center",
               }}
             >
               Tech Clubs
             </Typography>
-            <Typography style={{ color: "white", marginTop: "10px" }}>
+            <Typography style={{ marginTop: "10px" }}>
               HBTU aims to promote studies, research & innovation in Engineering
               areas of higher education, to enhance skill development through
               continuing education programme and knowledge and to achieve
@@ -70,11 +58,11 @@ const TcCard = () => {
           </Box>
         </CardContent>
         <Button
-          variant="contained"
           style={{
             width: "100%",
             color: "#3B82F6",
-            backgroundColor: "#1F2937",
+            backgroundColor: "#BFDBFE",
+            textTransform: "capitalize",
           }}
         >
           Read More
