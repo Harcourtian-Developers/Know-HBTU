@@ -12,9 +12,11 @@ const useStyles = makeStyles((theme) => ({
   img: {
     width: "100vw",
     height: "100vh",
+    objectFit: "cover",
+
     [theme.breakpoints.down("md")]: {
       width: "100vw",
-      height: "30vh",
+      height: "50vh",
     },
   },
   cards: {
@@ -36,7 +38,18 @@ const Home = () => {
   const classes = useStyles();
   return (
     <>
-      <img src={home} className={classes.img} />
+      <div class="relative pb-30 flex content-center items-center justify-center min-h-screen-70">
+        <div
+          class="absolute top-0 w-full h-full bg-center bg-cover"
+          id="bg-image"
+        >
+          <span
+            id="blackOverlay"
+            class="w-full h-full absolute opacity-50 bg-black"
+          ></span>
+        </div>
+        <img src={home} className={classes.img} />
+      </div>
       <ExtraCards />
       <Explore />
       <Box className={classes.cards}>

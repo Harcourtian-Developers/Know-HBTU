@@ -48,7 +48,7 @@ const ScCard = () => {
             >
               Sub-Councils
             </Typography>
-            <Typography style={{ marginTop: "10px" }}>
+            <Typography style={{ marginTop: "10px", textAlign: "center" }}>
               HBTU aims to promote studies, research & innovation in Engineering
               areas of higher education, to enhance skill development through
               continuing education programme and knowledge and to achieve
@@ -65,6 +65,17 @@ const ScCard = () => {
           }}
         >
           Read More
+          <svg
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-4 h-4 ml-1"
+            viewBox="0 0 24 24"
+          >
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
         </Button>
       </Card>
     </>

@@ -225,6 +225,7 @@ const Header = () => {
           <Button variant="contained" style={{ width: "100%" }}>
             <a
               href="https://erp.hbtu.ac.in/"
+              target="_blank"
               style={{
                 color: "inherit",
                 textDecoration: "none",
