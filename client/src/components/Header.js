@@ -57,11 +57,11 @@ const useStyles = makeStyles((theme) => ({
 
 const Header = () => {
   const classes = useStyles();
-  const [menu, setMenu] = useState(window.innerWidth > 1000);
+  const [menu, setMenu] = useState(window.innerWidth > 1400);
   const [open, setOpen] = useState(false);
   const theme = useTheme();
   const updateMedia = () => {
-    setMenu(window.innerWidth > 1000);
+    setMenu(window.innerWidth > 1400);
   };
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -80,43 +80,47 @@ const Header = () => {
         style={{
           backgroundColor: "white",
           color: "black",
+          position: "static",
         }}
       >
         <Toolbar className={classes.toolbar}>
           <img src={logo} className={classes.image} />
           {menu && (
             <>
-              <Typography>
+              <Typography variant="h6">
                 <Link
                   to="/"
                   style={{
                     color: "inherit",
                     textDecoration: "none",
-                    marginLeft: "750px",
+                    marginLeft: "700px",
+                    fontWeight: "bold",
                   }}
                 >
                   Home
                 </Link>
               </Typography>
-              <Typography>
+              <Typography variant="h6">
                 <Link
                   to="/resources"
                   style={{
                     color: "inherit",
                     textDecoration: "none",
                     marginLeft: "30px",
+                    fontWeight: "bold",
                   }}
                 >
                   Resources
                 </Link>
               </Typography>
-              <Typography>
+              <Typography variant="h6">
                 <Link
                   to="/about"
                   style={{
                     color: "inherit",
                     textDecoration: "none",
                     marginLeft: "30px",
+                    fontWeight: "bold",
                   }}
                 >
                   About
@@ -128,6 +132,7 @@ const Header = () => {
                   style={{
                     color: "inherit",
                     textDecoration: "none",
+                    fontWeight: "bold",
                   }}
                 >
                   HBTU ERP
@@ -139,6 +144,7 @@ const Header = () => {
                   style={{
                     color: "inherit",
                     textDecoration: "none",
+                    fontWeight: "bold",
                   }}
                 >
                   Official Site
