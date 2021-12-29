@@ -9,7 +9,7 @@ import {
   List,
   useTheme,
 } from "@material-ui/core";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../images/logo.jpeg";
 import MenuIcon from "@material-ui/icons/Menu";
 import IconButton from "@material-ui/core/IconButton";
@@ -85,7 +85,10 @@ const Header = () => {
         }}
       >
         <Toolbar className={classes.toolbar}>
-          <img src={logo} className={classes.image} />
+          <NavLink to="/">
+            {" "}
+            <img src={logo} className={classes.image} />
+          </NavLink>
           {menu && (
             <>
               <Typography variant="h6">
