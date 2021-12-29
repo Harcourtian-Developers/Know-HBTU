@@ -94,7 +94,7 @@ const Header = () => {
                   style={{
                     color: "inherit",
                     textDecoration: "none",
-                    marginLeft: "750px",
+                    marginLeft: "600px",
                     fontWeight: "bold",
                   }}
                 >
@@ -127,7 +127,10 @@ const Header = () => {
                   HBTU ERP
                 </a>
               </Button>
-              <Button variant="contained" style={{ marginLeft: "30px" }}>
+              <Button
+                variant="contained"
+                style={{ marginLeft: "30px", marginRight: "20px" }}
+              >
                 <a
                   href="https://hbtu.ac.in/"
                   target="_blank"
