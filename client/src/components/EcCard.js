@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "#BBF7D0",
     [theme.breakpoints.down("md")]: {
       width: "100vw",
-      height: "40vh",
+      height: "60vh",
     },
   },
 }));

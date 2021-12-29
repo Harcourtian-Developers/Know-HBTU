@@ -48,7 +48,8 @@ const useStyles = makeStyles((theme) => ({
   },
   drawer: {
     width: drawerWidth,
-    flexShrink: 0,
+    display: "flex",
+    flexDirection: "column",
   },
   drawerPaper: {
     width: drawerWidth,
@@ -93,7 +94,7 @@ const Header = () => {
                   style={{
                     color: "inherit",
                     textDecoration: "none",
-                    marginLeft: "700px",
+                    marginLeft: "750px",
                     fontWeight: "bold",
                   }}
                 >
@@ -102,7 +103,7 @@ const Header = () => {
               </Typography>
               <Typography variant="h6">
                 <Link
-                  to="/resources"
+                  to="/team"
                   style={{
                     color: "inherit",
                     textDecoration: "none",
@@ -110,25 +111,13 @@ const Header = () => {
                     fontWeight: "bold",
                   }}
                 >
-                  Resources
-                </Link>
-              </Typography>
-              <Typography variant="h6">
-                <Link
-                  to="/about"
-                  style={{
-                    color: "inherit",
-                    textDecoration: "none",
-                    marginLeft: "30px",
-                    fontWeight: "bold",
-                  }}
-                >
-                  About
+                  Our Team
                 </Link>
               </Typography>
               <Button variant="contained" style={{ marginLeft: "30px" }}>
                 <a
                   href="https://erp.hbtu.ac.in/"
+                  target="_blank"
                   style={{
                     color: "inherit",
                     textDecoration: "none",
@@ -141,6 +130,7 @@ const Header = () => {
               <Button variant="contained" style={{ marginLeft: "30px" }}>
                 <a
                   href="https://hbtu.ac.in/"
+                  target="_blank"
                   style={{
                     color: "inherit",
                     textDecoration: "none",
@@ -192,7 +182,9 @@ const Header = () => {
               style={{
                 color: "inherit",
                 textDecoration: "none",
-                paddingLeft: "40px",
+                width: "100%",
+                textAlign: "center",
+                marginLeft: "40px",
               }}
             >
               Home
@@ -200,26 +192,16 @@ const Header = () => {
           </Typography>
           <Typography>
             <Link
-              to="/resources"
+              to="/team"
               style={{
                 color: "inherit",
                 textDecoration: "none",
-                paddingLeft: "30px",
+                width: "100%",
+                textAlign: "center",
+                marginLeft: "40px",
               }}
             >
-              Resources
-            </Link>
-          </Typography>
-          <Typography>
-            <Link
-              to="/about"
-              style={{
-                color: "inherit",
-                textDecoration: "none",
-                paddingLeft: "40px",
-              }}
-            >
-              About
+              Our Team
             </Link>
           </Typography>
           <Button variant="contained" style={{ width: "100%" }}>
@@ -237,6 +219,7 @@ const Header = () => {
           <Button variant="contained" style={{ width: "100%" }}>
             <a
               href="https://hbtu.ac.in/"
+              target="_blank"
               style={{
                 color: "inherit",
                 textDecoration: "none",
