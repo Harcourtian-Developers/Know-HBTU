@@ -97,7 +97,7 @@ const Header = () => {
                   style={{
                     color: "inherit",
                     textDecoration: "none",
-                    marginLeft: "600px",
+                    marginLeft: "50vw",
                     fontWeight: "bold",
                   }}
                 >
